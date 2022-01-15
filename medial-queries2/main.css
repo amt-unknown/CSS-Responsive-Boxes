@@ -4,9 +4,9 @@ body {
 
 body {
   background: blanchedalmond;
-  padding: 1em;
   margin: 0;
-  height: 97.5vh;
+  height: 100vh;
+  padding: 1rem;
 }
 
 *{
@@ -18,55 +18,58 @@ body {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   gap: 1rem;
+  /* justify-content: space-between; */
 
-}
-
-.a, .b, .c{
-  min-height: 15%;
 }
 
 .a{
   width: 100%;
-  height: 32%;
 }
 
 .b{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-grow: 8;
-  height: 65%;
-  gap: 1rem;
-}
-
-.c{
-  flex-grow: 2;
-}
-
-.b1 {
-  height: 48%;
   width: 100%;
 }
 
-.b2 {
-  min-height: 48%;
-  width: 30%;
+.f{
+  width: 100%;
 }
 
+.a, .c, .d, .e, .f{
+  height: 20vh;
+}
 
-@media(max-width: 700px){
-    .container{
-        flex-direction: column;
+.b{
+  height: 40vh;
+}
 
-    }
-    .a, .c{
-      height: 15%;
-    }
+.c, .d, .e{
+  flex-grow: 1;
+}
 
-    .c{
-      width: 100%;
-    }
+@media (min-width: 600px){
+  .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+  }
 
+  .a{
+    grid-row: 1;
+    grid-column: 1/5;
+  }
+
+  .b{
+    grid-column: 1/4;
+  }
+
+  .f{
+    grid-row: 2/4;
+    grid-column: 4;
+  }
+
+  .a, .c, .d, .e, .f{
+    width: 100%;
+    height: 100%;
+  }
 }
