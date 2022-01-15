@@ -29,7 +29,7 @@ body {
 
 .a{
   width: 100%;
-  height: 15%;
+  height: 32%;
 }
 
 .b{
@@ -37,7 +37,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 8;
-  height: 83%;
+  height: 65%;
   gap: 1rem;
 }
 
@@ -56,12 +56,8 @@ body {
 
     }
 
-    a.{
-      height: 30%;
-    }
-
-    .b{
-      height: 40%;
+    .a, .c{
+      height: 15%;
     }
 
     .c{

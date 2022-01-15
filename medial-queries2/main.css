@@ -29,7 +29,7 @@ body {
 
 .a{
   width: 100%;
-  height: 15%;
+  height: 32%;
 }
 
 .b{
@@ -37,7 +37,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-grow: 8;
-  height: 83%;
+  height: 65%;
   gap: 1rem;
 }
 
@@ -46,27 +46,27 @@ body {
 }
 
 .b1 {
-  height: 67%;
+  height: 48%;
   width: 100%;
 }
 
 .b2 {
-  max-height: 45%;
-  min-height: 30%;
+  min-height: 48%;
   width: 30%;
 }
+
 
 @media(max-width: 700px){
     .container{
         flex-direction: column;
 
     }
-
-    .b{
-      height: 50%;
+    .a, .c{
+      height: 15%;
     }
 
     .c{
       width: 100%;
     }
+
 }

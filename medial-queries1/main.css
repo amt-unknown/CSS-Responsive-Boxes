@@ -25,12 +25,12 @@ body {
 
 .a{
   width: 100%;
-  height: 15%;
+  height: 32%;
 }
 
 .b{
   flex-grow: 8;
-  height: 83%;
+  height: 65%;
 }
 
 .c{
@@ -43,8 +43,8 @@ body {
 
     }
 
-    .b{
-      height: 50%;
+    .a, .c{
+      height: 15%;
     }
 
     .c{
